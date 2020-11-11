@@ -1,0 +1,6 @@
+Discovered open port 80/tcp on 122.177.251.11
+Discovered open port 53/tcp on 122.177.251.11
+Discovered open port 443/tcp on 122.177.251.11
+53/tcp   open     domain     ISC BIND
+80/tcp   open     http       ZyXEL Virtual Web httpd 0.9
+443/tcp  open     ssl/https?

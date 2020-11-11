@@ -1,0 +1,6 @@
+Discovered open port 22/tcp on 127.0.0.1
+Discovered open port 3306/tcp on 127.0.0.1
+Discovered open port 8000/tcp on 127.0.0.1
+22/tcp   open  ssh      OpenSSH 7.9 (protocol 2.0)
+3306/tcp open  mysql    MySQL 5.5.5-10.1.37-MariaDB
+8000/tcp open  http-alt WSGIServer/0.2 CPython/3.6.5

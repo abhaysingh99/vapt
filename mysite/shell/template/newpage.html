@@ -1,0 +1,141 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Scanned opened ports</h1>
+
+<h1><ul>
+        {% for c in data1 %}
+                <li>{{ c }}</li>
+        {% endfor %}
+</ul></h1>
+
+<h1><ul>
+        {% for c in data2 %}
+                <li>{{ c }}</li>
+        {% endfor %}
+</ul></h1>
+
+<h1><ul>
+        {% for c in data3 %}
+                <li>{{ c }}</li>
+        {% endfor %}
+</ul></h1>
+
+<h1><ul>
+        {% for c in data4 %}
+                <li>{{ c }}</li>
+        {% endfor %}
+</ul></h1>
+
+<h1><ul>
+        {% for c in data5 %}
+                <li>{{ c }}</li>
+        {% endfor %}
+</ul></h1>
+
+</h1>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<marquee>
+<h1>Scan Summary</h2>
+</marquee>
+<br>
+<br>
+<br>
+<table style="width:65%">
+  <tr>
+    <th><h1>Initialisations</h1></th> 
+  </tr>
+  <tr>
+    <td><h2><ul>
+            {% for c in data1 %}
+                    <li>{{ c }}</li>
+            {% endfor %}
+    </ul></h2></td>
+   
+  </tr>
+  
+</table>
+<br>
+<br>
+
+
+<table style="width:65%">
+        <tr>
+          <th><h1>open port</h1></th> 
+        </tr>
+        <tr>
+          <td><h2><ul>
+                  {% for c in data2 %}
+                          <li>{{ c }}</li>
+                  {% endfor %}
+          </ul></h2></td>
+         
+        </tr>
+        
+</table>
+<br>
+
+<table style="width:65%">
+        <tr>
+          <th><h1>Encryption Technique</h1></th> 
+        </tr>
+        <tr>
+          <td><h2><ul>
+                  {% for c in data5 %}
+                          <li>{{ c }}</li>
+                  {% endfor %}
+          </ul></h2></td>
+         
+        </tr>
+        
+</table>
+<br>
+<table style="width:65%">
+        <tr>
+          <th><h1>services</h1></th> 
+        </tr>
+        <tr>
+          <td><h2><ul>
+                  {% for c in data4 %}
+                          <li>{{ c }}</li>
+                  {% endfor %}
+          </ul></h2></td>
+         
+        </tr>
+        
+</table>
+<br>
+<table style="width:65%">
+        <tr>
+          <th><h1>Scan Abort</h1></th> 
+        </tr>
+        <tr>
+          <td><h2><ul>
+                  {% for c in data3 %}
+                          <li>{{ c }}</li>
+                  {% endfor %}
+          </ul></h2></td>
+         
+        </tr>
+        
+</table>
+
+</body>
+</html>

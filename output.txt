@@ -1,0 +1,116 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-10-10 14:30 IST
+NSE: Loaded 151 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 14:30
+Completed NSE at 14:30, 0.00s elapsed
+Initiating NSE at 14:30
+Completed NSE at 14:30, 0.00s elapsed
+Initiating NSE at 14:30
+Completed NSE at 14:30, 0.00s elapsed
+Initiating Ping Scan at 14:30
+Scanning 8.8.8.8 [2 ports]
+Completed Ping Scan at 14:30, 0.01s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:30
+Completed Parallel DNS resolution of 1 host. at 14:30, 0.01s elapsed
+Initiating Connect Scan at 14:30
+Scanning dns.google (8.8.8.8) [1000 ports]
+Discovered open port 443/tcp on 8.8.8.8
+Discovered open port 53/tcp on 8.8.8.8
+Completed Connect Scan at 14:30, 4.52s elapsed (1000 total ports)
+Initiating Service scan at 14:30
+Scanning 2 services on dns.google (8.8.8.8)
+Completed Service scan at 14:32, 69.04s elapsed (2 services on 1 host)
+NSE: Script scanning 8.8.8.8.
+Initiating NSE at 14:32
+Completed NSE at 14:32, 5.04s elapsed
+Initiating NSE at 14:32
+Completed NSE at 14:32, 1.85s elapsed
+Initiating NSE at 14:32
+Completed NSE at 14:32, 0.00s elapsed
+Nmap scan report for dns.google (8.8.8.8)
+Host is up (0.014s latency).
+Not shown: 998 filtered ports
+PORT    STATE SERVICE    VERSION
+53/tcp  open  tcpwrapped
+443/tcp open  ssl/https  sffe
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.0 404 Not Found
+|     Content-Type: text/html; charset=UTF-8
+|     X-Content-Type-Options: nosniff
+|     Date: Sat, 10 Oct 2020 09:01:05 GMT
+|     Server: sffe
+|     Content-Length: 1561
+|     X-XSS-Protection: 0
+|     Alt-Svc: h3-Q050=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-27=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-T050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+|     <!DOCTYPE html>
+|     <html lang=en>
+|     <meta charset=utf-8>
+|     <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+|     <title>Error 404 (Not Found)!!1</title>
+|     <style>
+|_    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-robots.txt: 1 disallowed entry 
+|_/
+| http-server-header: 
+|   Google Frontend
+|_  sffe
+|_http-title: Google Public DNS
+| ssl-cert: Subject: commonName=dns.google/organizationName=Google LLC/stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:dns.google, DNS:*.dns.google.com, DNS:8888.google, DNS:dns.google.com, DNS:dns64.dns.google, IP Address:2001:4860:4860:0:0:0:0:64, IP Address:2001:4860:4860:0:0:0:0:6464, IP Address:2001:4860:4860:0:0:0:0:8844, IP Address:2001:4860:4860:0:0:0:0:8888, IP Address:8.8.4.4, IP Address:8.8.8.8
+| Issuer: commonName=GTS CA 1O1/organizationName=Google Trust Services/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-09-22T15:16:30
+| Not valid after:  2020-12-15T15:16:30
+| MD5:   5957 6c59 1617 a23f f8e0 a6e4 ca51 8b06
+|_SHA-1: 31b5 930c ea25 70a8 d15d 1188 ef62 7e17 6af4 58df
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.80%T=SSL%I=7%D=10/10%Time=5F817851%P=x86_64-apple-darwi
+SF:n19.5.0%r(GetRequest,7C0,"HTTP/1\.0\x20404\x20Not\x20Found\r\nContent-T
+SF:ype:\x20text/html;\x20charset=UTF-8\r\nX-Content-Type-Options:\x20nosni
+SF:ff\r\nDate:\x20Sat,\x2010\x20Oct\x202020\x2009:01:05\x20GMT\r\nServer:\
+SF:x20sffe\r\nContent-Length:\x201561\r\nX-XSS-Protection:\x200\r\nAlt-Svc
+SF::\x20h3-Q050=\":443\";\x20ma=2592000,h3-29=\":443\";\x20ma=2592000,h3-2
+SF:7=\":443\";\x20ma=2592000,h3-T051=\":443\";\x20ma=2592000,h3-T050=\":44
+SF:3\";\x20ma=2592000,h3-Q046=\":443\";\x20ma=2592000,h3-Q043=\":443\";\x2
+SF:0ma=2592000,quic=\":443\";\x20ma=2592000;\x20v=\"46,43\"\r\n\r\n<!DOCTY
+SF:PE\x20html>\n<html\x20lang=en>\n\x20\x20<meta\x20charset=utf-8>\n\x20\x
+SF:20<meta\x20name=viewport\x20content=\"initial-scale=1,\x20minimum-scale
+SF:=1,\x20width=device-width\">\n\x20\x20<title>Error\x20404\x20\(Not\x20F
+SF:ound\)!!1</title>\n\x20\x20<style>\n\x20\x20\x20\x20\*{margin:0;padding
+SF::0}html,code{font:15px/22px\x20arial,sans-serif}html{background:#fff;co
+SF:lor:#222;padding:15px}body{margin:7%\x20auto\x200;max-width:390px;min-h
+SF:eight:180px;padding:30px\x200\x2015px}\*\x20>\x20body{background:url\(/
+SF:/www\.google\.com/images/errors/robot\.png\)\x20100%\x205px\x20no-repea
+SF:t;padding-right")%r(HTTPOptions,7C0,"HTTP/1\.0\x20404\x20Not\x20Found\r
+SF:\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nX-Content-Type-Option
+SF:s:\x20nosniff\r\nDate:\x20Sat,\x2010\x20Oct\x202020\x2009:01:05\x20GMT\
+SF:r\nServer:\x20sffe\r\nContent-Length:\x201561\r\nX-XSS-Protection:\x200
+SF:\r\nAlt-Svc:\x20h3-Q050=\":443\";\x20ma=2592000,h3-29=\":443\";\x20ma=2
+SF:592000,h3-27=\":443\";\x20ma=2592000,h3-T051=\":443\";\x20ma=2592000,h3
+SF:-T050=\":443\";\x20ma=2592000,h3-Q046=\":443\";\x20ma=2592000,h3-Q043=\
+SF:":443\";\x20ma=2592000,quic=\":443\";\x20ma=2592000;\x20v=\"46,43\"\r\n
+SF:\r\n<!DOCTYPE\x20html>\n<html\x20lang=en>\n\x20\x20<meta\x20charset=utf
+SF:-8>\n\x20\x20<meta\x20name=viewport\x20content=\"initial-scale=1,\x20mi
+SF:nimum-scale=1,\x20width=device-width\">\n\x20\x20<title>Error\x20404\x2
+SF:0\(Not\x20Found\)!!1</title>\n\x20\x20<style>\n\x20\x20\x20\x20\*{margi
+SF:n:0;padding:0}html,code{font:15px/22px\x20arial,sans-serif}html{backgro
+SF:und:#fff;color:#222;padding:15px}body{margin:7%\x20auto\x200;max-width:
+SF:390px;min-height:180px;padding:30px\x200\x2015px}\*\x20>\x20body{backgr
+SF:ound:url\(//www\.google\.com/images/errors/robot\.png\)\x20100%\x205px\
+SF:x20no-repeat;padding-right");
+
+NSE: Script Post-scanning.
+Initiating NSE at 14:32
+Completed NSE at 14:32, 0.00s elapsed
+Initiating NSE at 14:32
+Completed NSE at 14:32, 0.00s elapsed
+Initiating NSE at 14:32
+Completed NSE at 14:32, 0.00s elapsed
+Read data files from: /usr/local/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 81.60 seconds
